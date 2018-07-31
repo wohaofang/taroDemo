@@ -2,19 +2,15 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 
-export default class Index extends Component {
+export default class Test extends Component {
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: '测试'
   }
 
-  Click1 = ()=>{
-    console.log(111)
-  Taro.navigateTo({
-      url: '/pages/test/index?name=dingming&age=24'
-    })
-}
 
-  componentWillMount () { }
+  componentWillMount () {
+    console.log(this.$router.params)
+   }
 
   componentDidMount () { }
 
@@ -27,7 +23,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text onClick={this.Click1}>Hello world!</Text>
+        <Text>Hello world 测试!</Text>
       </View>
     )
   }

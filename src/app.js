@@ -21,7 +21,7 @@ class App extends Component {
         text: "首页"
       }, {
         pagePath: "pages/test/index",
-        text: "日志"
+        text: "测试"
       }]
     },
   }

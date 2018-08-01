@@ -33,7 +33,7 @@ export default class Index extends Component {
           scrollX
           scrollWithAnimation
           scrollTop='0'
-          style='height: 150px;width: 100%;box-sizing:border-box;'
+          style='height: 150px;width: 100%;box-sizing:border-box;white-space:nowrap'
           lowerThreshold='20'
           upperThreshold='20'
         >
